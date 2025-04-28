@@ -17,3 +17,4 @@ if __name__ == "__main__":
     start_vertex = 1
     path = dfs(graph, start_vertex)
     print("Обход в глубину:", path)
+#3 ЧАСТЬ
