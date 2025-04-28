@@ -21,13 +21,9 @@ if __name__ == "__main__":
         graph.setdefault(v, []).append(u)
 
     start_vertex = 2
-    end_vertex = 5  # некорректная вершина для проверки
-
-    if start_vertex not in graph or end_vertex not in graph:
-        print(f"Ошибка: одна из вершин ({start_vertex}, {end_vertex}) отсутствует в графе")
+    end_vertex = 4
+    path_length = dfs_path_length(graph, start_vertex, end_vertex)
+    if path_length is not None:
+        print(f"Длина пути из {start_vertex} в {end_vertex}: {path_length}")
     else:
-        path_length = dfs_path_length(graph, start_vertex, end_vertex)
-        if path_length is not None:
-            print(f"Длина пути из {start_vertex} в {end_vertex}: {path_length}")
-        else:
-            print(f"Пути из {start_vertex} в {end_vertex} не существует")
+        print(f"Пути из {start_vertex} в {end_vertex} не существует")
