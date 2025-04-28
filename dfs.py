@@ -20,13 +20,12 @@ if __name__ == "__main__":
         graph.setdefault(u, []).append(v)
         graph.setdefault(v, []).append(u)
 
-<<<<<<< HEAD
+    # Часть для обхода в глубину
     start_vertex = 1
     path = dfs(graph, start_vertex)
     print("Обход в глубину:", path)
-#3 ЧАСТЬ
-#Делаем изменения в ветке main -------------------------------------------
-=======
+
+    # Часть для вычисления длины пути
     start_vertex = 2
     end_vertex = 4
     path_length = dfs_path_length(graph, start_vertex, end_vertex)
@@ -34,4 +33,3 @@ if __name__ == "__main__":
         print(f"Длина пути из {start_vertex} в {end_vertex}: {path_length}")
     else:
         print(f"Пути из {start_vertex} в {end_vertex} не существует")
->>>>>>> 22e9a274314d00ce9c3df622efd625867ac20129
