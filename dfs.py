@@ -18,3 +18,4 @@ if __name__ == "__main__":
     path = dfs(graph, start_vertex)
     print("Обход в глубину:", path)
 #3 ЧАСТЬ
+#Делаем изменения в ветке main
